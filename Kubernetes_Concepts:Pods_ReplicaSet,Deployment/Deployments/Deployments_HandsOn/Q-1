@@ -1,0 +1,5 @@
+How many PODs exist on the system ?
+
+kubectl get pods
+
+0 pods exist.

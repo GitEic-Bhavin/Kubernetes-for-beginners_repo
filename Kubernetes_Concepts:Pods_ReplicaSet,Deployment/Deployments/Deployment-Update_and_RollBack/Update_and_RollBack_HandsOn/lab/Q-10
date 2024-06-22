@@ -1,0 +1,5 @@
+Up to how many PODs can be down for upgrade at a time
+
+Consider the current strategy settings and number of PODs - 4
+
+1. bcz, current strategy is RollingUpdate.

@@ -1,0 +1,5 @@
+How many Deployments exist on the system ?
+
+kubectl get deployment or kubectl get dploy
+
+0 deployment exist

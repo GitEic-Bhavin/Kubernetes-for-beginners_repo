@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: myapps-deployments
+  labels:
+    env: Production
+
+# labels for replicaset & pod should be always same. Otherwise dployment will not occur.
+
+# Pods block, to use Pods block , use template: & paste all data from metadat of pods file
+spec:
+  template:
+    metadata:
+      name: nginx-3
+      labels:
+        env: Production
+
+    spec:
+      containers:
+        - name: nginx-3-container
+          image: nginx
+
+  replicas: 3
+  selector:
+    matchLabels:
+      env: Production
+
+
+
+# kubectl get deployments
+# kubectl get pods
+# kubectl describe deployment myapps-deployments
+# kubectl get all

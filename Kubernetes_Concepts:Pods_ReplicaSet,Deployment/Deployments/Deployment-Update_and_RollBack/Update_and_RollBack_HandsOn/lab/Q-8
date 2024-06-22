@@ -1,0 +1,8 @@
+Let us try that. Upgrade the application by setting the image on the deployment to kodekloud/webapp-color:v2
+
+
+Do not delete and re-create the deployment. Only set the new image name for the existing deployment.
+
+kubectl edint deploument frontend
+
+Look for image: & replade with kodekloud/webapp-color:v2

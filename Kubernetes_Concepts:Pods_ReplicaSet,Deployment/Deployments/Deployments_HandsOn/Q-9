@@ -1,0 +1,15 @@
+Why do you think the deployment is not ready ?
+
+kubectl describe pods
+
+The image "busybox888" doesn't exist
+
+# Events:
+#   Type     Reason     Age                    From               Message
+#   ----     ------     ----                   ----               -------
+#   Normal   Scheduled  5m54s                  default-scheduler  Successfully assigned default/frontend-deployment-6469748456-khh7p to controlplane
+#   Normal   Pulling    4m31s (x4 over 5m54s)  kubelet            Pulling image "busybox888"
+#   Warning  Failed     4m31s (x4 over 5m53s)  kubelet            Failed to pull image "busybox888": failed to pull and unpack image "docker.io/library/busybox888:latest": failed to resolve reference "docker.io/library/busybox888:latest": pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+#   Warning  Failed     4m31s (x4 over 5m53s)  kubelet            Error: ErrImagePull
+#   Warning  Failed     4m3s (x6 over 5m52s)   kubelet            Error: ImagePullBackOff
+#   Normal   BackOff    48s (x20 over 5m52s)   kubelet            Back-off pulling image "busybox888"

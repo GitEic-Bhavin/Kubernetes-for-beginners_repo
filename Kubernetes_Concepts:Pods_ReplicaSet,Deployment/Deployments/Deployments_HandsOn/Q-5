@@ -1,0 +1,4 @@
+How many replicaset exist on the system now ?
+
+kubectl get replicaset
+1 replicaset is exist

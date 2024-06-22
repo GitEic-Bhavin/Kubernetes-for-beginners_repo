@@ -1,0 +1,10 @@
+How many PODs exist on the system now ?
+
+kubectl get pods
+4 pods exist
+
+NAME                                   READY   STATUS             RESTARTS   AGE
+frontend-deployment-6469748456-gtbx6   0/1     ImagePullBackOff   0          2m48s
+frontend-deployment-6469748456-khh7p   0/1     ImagePullBackOff   0          2m48s
+frontend-deployment-6469748456-962rl   0/1     ImagePullBackOff   0          2m48s
+frontend-deployment-6469748456-8g8pl   0/1     ImagePullBackOff   0          2m48s

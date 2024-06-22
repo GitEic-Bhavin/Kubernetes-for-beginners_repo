@@ -1,0 +1,23 @@
+# Introduction: Let us now get to the specification 
+
+# Instruction: The spec section for Deployment has 3 fields: replicas, template and selector. Simply add these properties. Do not add any values.
+
+# Instruction: Let us update the number of replicas to 4.
+
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+    tier: frontend
+
+spec:
+
+  replicas: 4
+
+  template:
+
+  selector:

@@ -1,0 +1,16 @@
+# Inspect the deployment and identify the current strategy
+
+# kubectl describe deployment & look for StrategyType
+
+StrategyType is RollingUpdate
+
+# Name:                   frontend
+# Namespace:              default
+# CreationTimestamp:      Sat, 22 Jun 2024 18:40:20 +0000
+# Labels:                 <none>
+# Annotations:            deployment.kubernetes.io/revision: 1
+# Selector:               name=webapp
+# Replicas:               4 desired | 4 updated | 4 total | 4 available | 0 unavailable
+# StrategyType:           RollingUpdate
+# MinReadySeconds:        20
+# RollingUpdateStrategy:  25% max unavailable, 25% max surge

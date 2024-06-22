@@ -1,0 +1,7 @@
+We have deployed a simple web application. Inspect the PODs and the Services
+
+
+Wait for the application to fully deploy and view the application using the link called Webapp Portal above your terminal.
+
+kubectl get pods.
+4 pods are ready

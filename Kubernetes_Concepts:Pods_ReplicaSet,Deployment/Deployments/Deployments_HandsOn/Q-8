@@ -1,0 +1,5 @@
+What is the image used to create the pods in the new deployment 
+
+Image is busybox888
+
+kubectl describe pods

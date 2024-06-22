@@ -1,0 +1,5 @@
+Run the script curl-test.sh again. Notice the requests now hit both the old and newer versions. However none of them fail.
+
+Execute the script at /root/curl-test.sh.
+
+./curl-test.sh

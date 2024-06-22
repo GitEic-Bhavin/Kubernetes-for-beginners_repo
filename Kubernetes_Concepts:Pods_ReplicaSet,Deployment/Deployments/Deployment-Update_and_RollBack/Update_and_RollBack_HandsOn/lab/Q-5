@@ -1,0 +1,5 @@
+What container image is used to deploy the applications?
+
+kubectl describe PODs
+
+kodeklou/webapp-color:v1 image is used
