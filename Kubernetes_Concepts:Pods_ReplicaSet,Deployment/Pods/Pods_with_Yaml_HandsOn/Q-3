@@ -1,0 +1,13 @@
+How many pods are created now?
+
+Note: We have created a few more pods. So please check again.
+
+kubectl get pods
+
+NAME            READY   STATUS    RESTARTS   AGE
+nginx           1/1     Running   0          69s
+newpods-wjqw4   1/1     Running   0          25s
+newpods-cn86h   1/1     Running   0          25s
+newpods-q6jqj   1/1     Running   0          25s
+
+Total 4 pods created.

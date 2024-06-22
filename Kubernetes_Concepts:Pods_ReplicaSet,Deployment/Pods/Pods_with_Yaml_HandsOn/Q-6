@@ -1,0 +1,27 @@
+# How many containers are part of the pod webapp?
+
+# Note: We just created a new POD. Ignore the state of the POD for now.
+
+# kubectl describe pods webapp
+
+
+# Ans, see in Containers: 1 nginx: , 2 agentx: are the containers names which ara parts of pod webapp.
+
+# Containers:
+#   nginx:
+#     Container ID:   containerd://cd0ab02249165e6928489429f7e3fe1500dc7838dd050db18810cadd179dd060
+#     Image:          nginx
+#     Image ID:       docker.io/library/nginx@sha256:56b388b0d79c738f4cf51bbaf184a14fab19337f4819ceb2cae7d94100262de8
+#     Port:           <none>
+#     Host Port:      <none>
+#     State:          Running
+#       Started:      Fri, 21 Jun 2024 08:56:18 +0000
+#     Ready:          True
+#     Restart Count:  0
+#     Environment:    <none>
+#     Mounts:
+#       /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-r944d (ro)
+#   agentx:
+#     Container ID:   
+#     Image:          agentx
+#     Image ID:       

@@ -1,0 +1,15 @@
+# Introduction: Let us add some labels to our Pod 
+
+# Instruction: Add a property "labels" under metadata with a child property "app" with a value "myapp".
+#              Remember to have equal number of spaces before "name" and "labels" so they are siblings
+
+# pod-definition.yml
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+spec:

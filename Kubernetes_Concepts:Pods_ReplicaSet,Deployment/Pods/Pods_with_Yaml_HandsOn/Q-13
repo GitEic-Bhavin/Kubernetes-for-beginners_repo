@@ -1,0 +1,28 @@
+Now change the image on this pod to redis.
+
+
+Once done, the pod should be in a running state.
+
+
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: redis
+  labels: 
+    name: redis
+    tier: redis-db-tier
+
+spec:
+  containers:
+    - name: redis
+      image: redis
+
+# To update & set the pod.yml file to run pod redis succesfully, run this command after update pod.yml file redis instead of redis123. redis is a image name.
+
+# kubectl apply -f pod.yml
+
+
+# If you created this pod by cli only.
+# kubectl edit pod redis & edit image: redis instead of image: redis123

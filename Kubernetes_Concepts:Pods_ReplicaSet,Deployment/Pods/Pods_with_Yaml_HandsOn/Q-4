@@ -1,0 +1,26 @@
+What is the image used to create the new pods?
+
+You must look at one of the new pods in detail to figure this out.
+
+kubectl get pods
+
+NAME            READY   STATUS    RESTARTS   AGE
+nginx           1/1     Running   0          69s
+newpods-wjqw4   1/1     Running   0          25s
+newpods-cn86h   1/1     Running   0          25s
+newpods-q6jqj   1/1     Running   0          25s
+
+kubectl describe pods newpods-wjqw4
+
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m    default-scheduler  Successfully assigned default/newpods-cn86h to controlplane
+  Normal  Pulling    119s  kubelet            Pulling image "busybox"
+  Normal  Pulled     119s  kubelet            Successfully pulled image "busybox" in 397ms (398ms including waiting). Image size: 4496154 bytes.
+  Normal  Created    119s  kubelet            Created container busybox
+  Normal  Started    118s  kubelet            Started container busybox
+
+
+  Ans. Image is busybox
+  

@@ -1,0 +1,2 @@
+Q-1 How many pods exist on the system ?
+A-1 kubectl get pods . 0 pods exist

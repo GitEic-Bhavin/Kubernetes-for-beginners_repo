@@ -1,0 +1,11 @@
+Delete any one of the 4 PODs.
+
+kubectl get pods
+
+NAME                    READY   STATUS             RESTARTS   AGE
+new-replica-set-r59p7   0/1     ImagePullBackOff   0          22m
+new-replica-set-bjfk4   0/1     ImagePullBackOff   0          22m
+new-replica-set-2kh4j   0/1     ImagePullBackOff   0          22m
+new-replica-set-295zk   0/1     ImagePullBackOff   0          22m
+
+kubectl delete pods new-replica-set-r59p7

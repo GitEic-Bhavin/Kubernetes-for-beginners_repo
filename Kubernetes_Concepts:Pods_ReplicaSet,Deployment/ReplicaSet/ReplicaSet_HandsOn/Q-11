@@ -1,0 +1,27 @@
+# Create a ReplicaSet using the replicaset-definition-1.yaml file located at /root/.
+
+# There is an issure with the file, so try to fix it.\
+
+# Run the command: You can check for apiVersion of replicaset by command kubectl api-resources | grep replicaset
+
+# kubectl explain replicaset | grep VERSION and correct the apiVersion for ReplicaSet.
+
+Then run the command: kubectl create -f /root/replicaset-definition-1.yaml
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: nginx
+          image: nginx

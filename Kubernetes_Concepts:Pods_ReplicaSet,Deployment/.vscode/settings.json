@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "Kubernetes": "*.yml",
+        // "Ansible": "*.yml"
+    }
+}

@@ -1,0 +1,5 @@
+How many ReplicaSets exist on the system?
+
+kubectl get ReplicaSets
+
+0 ReplicaSets exist

@@ -1,0 +1,5 @@
+What is the state of the container agentx in the pod webapp?
+
+Wait for it to finish the ContainerCreating state
+
+Ans is Waiting

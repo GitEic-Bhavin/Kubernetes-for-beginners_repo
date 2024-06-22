@@ -1,0 +1,36 @@
+# Create a pod using yaml file
+# To create a pod , you required 4 common items in yam file.
+
+apiVersion: v1
+
+
+kind: Pod
+
+
+
+# matadata is a dictionary and it can have values where we define,
+# name of pod & lables.
+# lables like a tags , app: nginx, tier: frontend
+metadata:
+  name: nginx1
+  labels:
+    app: nginx
+    tier: frontend
+
+# spec has containers within the object (pods).
+# so, one pod may have multiple containers, we will define it in spec.
+# each container will have its name.
+
+# define image name
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+    
+
+# To create this pods, 
+# kubectl apply -f pod.yml
+# kubectl get pods
+# kubectl describe pod nginx -- "nginx" is a pod name.
+
+

@@ -1,0 +1,9 @@
+Why do you think the PODs are not ready ?
+
+kubectl describe pod new-replica-set
+
+Ans. Image BUSBOX77 does not exists.
+
+
+
+Failed to pull image "busybox777": failed to pull and unpack image "docker.io/library/busybox777:latest": failed to resolve reference "docker.io/library/busybox777:latest": pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed

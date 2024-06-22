@@ -1,0 +1,14 @@
+Fix the original replica set new-replica-set to use the correct busybox image.
+
+
+Either delete and recreate the ReplicaSet or Update the existing ReplicaSet and then delete all PODs, so new ones with the correct image will be created.
+
+kubectl edit replicaset new-replica-set 
+
+ spec:
+      containers:
+      - command:
+        - sh
+        - -c
+        - echo Hello Kubernetes! && sleep 3600
+        image: busybox

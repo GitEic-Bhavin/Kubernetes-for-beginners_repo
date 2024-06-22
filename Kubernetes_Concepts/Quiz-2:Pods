@@ -1,0 +1,8 @@
+Q-1 The smallest unit you can create in kubernetes object model is:\
+A-1 Pods
+
+Q-2 A Pod can only have one container in it ?
+A-2 Flase. A Pod can have multiple container in it.
+
+Q-3 What is the right approach to scale an applications ?
+A-3 Deploy an additional Pods

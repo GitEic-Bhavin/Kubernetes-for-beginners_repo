@@ -1,0 +1,6 @@
+Delete the two newly created ReplicaSets- replicaset-1 and replicaset-2
+
+kubectl get replicaset
+
+kubectl delete replicaset replicaset-1
+kubectl delete replicaset replicaset-2

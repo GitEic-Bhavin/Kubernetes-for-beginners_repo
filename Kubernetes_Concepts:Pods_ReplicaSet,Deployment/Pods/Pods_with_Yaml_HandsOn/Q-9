@@ -1,0 +1,20 @@
+Why do you think the container agentx in pod webapp is in error?
+
+Try to figure it out from the events section of the pod.
+
+Ans is , Docker image is not exists.
+
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  4m33s                  default-scheduler  Successfully assigned default/webapp to controlplane
+  Normal   Pulling    4m28s                  kubelet            Pulling image "nginx"
+  Normal   Pulled     4m28s                  kubelet            Successfully pulled image "nginx" in 158ms (158ms including waiting). Image size: 71004460 bytes.
+  Normal   Created    4m28s                  kubelet            Created container nginx
+  Normal   Started    4m27s                  kubelet            Started container nginx
+  Warning  Failed     3m46s (x3 over 4m27s)  kubelet            Error: ErrImagePull
+  Normal   BackOff    3m6s (x5 over 4m26s)   kubelet            Back-off pulling image "agentx"
+  Warning  Failed     3m6s (x5 over 4m26s)   kubelet            Error: ImagePullBackOff
+  Normal   Pulling    2m55s (x4 over 4m27s)  kubelet            Pulling image "agentx"
+  Warning  Failed     2m55s (x4 over 4m27s)  kubelet            Failed to pull image "agentx": failed to pull and unpack image "docker.io/library/agentx:latest": failed to resolve reference "docker.io/library/agentx:latest": pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+

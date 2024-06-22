@@ -1,0 +1,24 @@
+# Introduction: Perfect! You have successfully created a Kubernetes-Definition file. 
+#               Let us try it one more time, this time all on your own! 
+
+# Instruction: Create a Kubernetes Pod definition file using values below: 
+
+# Name: postgres 
+# Labels: tier => db-tier
+# Container name: postgres
+# Image: postgres
+
+# pod-definition.yml
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: postgres-db
+  labels:
+    tier: db-tier
+
+spec:
+  containers:
+    - name: postgres
+      image: postgres

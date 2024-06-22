@@ -1,0 +1,17 @@
+# Introduction: We now need to provide information regarding the docker image we plan to use. 
+
+# Instruction: Add a property containers under spec section. Do not add anything under it yet.
+
+# pod-definition.yml
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+
+spec:
+  containers:
+    

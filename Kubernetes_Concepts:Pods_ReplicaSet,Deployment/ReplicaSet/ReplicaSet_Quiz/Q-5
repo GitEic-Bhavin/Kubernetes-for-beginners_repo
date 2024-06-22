@@ -1,0 +1,18 @@
+# Instruction: Let us update the number of replicas to 4.
+
+apiVersion: apps/v1
+
+kind: ReplicaSet
+
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+    tier: frontend
+
+spec:
+  template:
+
+  selector:
+
+  replicas: 4

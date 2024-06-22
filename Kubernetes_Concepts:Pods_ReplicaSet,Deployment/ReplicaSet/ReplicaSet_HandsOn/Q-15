@@ -1,0 +1,8 @@
+# Scale the ReplicaSet to 5 PODs.
+
+# Use kubectl scale command or edit the replicaset using kubectl edit replicaset.
+
+# Run the command: kubectl edit replicaset new-replica-set, modify the replicas and then save the file 
+# OR run:
+# kubectl scale rs new-replica-set --replicas=5 to scale up to 5 PODs.
+

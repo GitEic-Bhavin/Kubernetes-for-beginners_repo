@@ -1,0 +1,5 @@
+What images are used in the new webapp pod?
+
+You must look at all the pods in detail to figure this out.
+
+Ans. nginx & agentx images are used in pod webapp

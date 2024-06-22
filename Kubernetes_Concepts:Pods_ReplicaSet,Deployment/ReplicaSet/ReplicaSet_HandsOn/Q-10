@@ -1,0 +1,3 @@
+Why are there still 4 PODs, even after you deleted one ?
+
+ReplicaSet ensures that desired number of PODs always runs.

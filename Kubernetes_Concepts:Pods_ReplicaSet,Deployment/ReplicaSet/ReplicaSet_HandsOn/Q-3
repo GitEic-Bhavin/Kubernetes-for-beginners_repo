@@ -1,0 +1,6 @@
+How about now ? How many ReplicaSets do you see ?
+We just made a few changes!
+
+kubectl get ReplicaSet
+
+1 ReplicaSet is found, new-replica-set is name of ReplicaSet.

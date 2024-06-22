@@ -1,0 +1,4 @@
+What does the READY column in the output of the kubectl get pods command indicate?
+
+Ans.
+Total containers in POD/Running Containers in POD.

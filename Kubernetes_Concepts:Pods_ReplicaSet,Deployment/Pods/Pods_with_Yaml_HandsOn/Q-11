@@ -1,0 +1,6 @@
+Delete the webapp Pod.
+
+
+Once deleted, wait for the pod to fully terminate.
+
+kubectl delete pods webapp

@@ -1,0 +1,11 @@
+How many PODs exist now ?
+
+kubectl get pods
+
+4 pods exist
+
+NAME                    READY   STATUS             RESTARTS   AGE
+new-replica-set-bjfk4   0/1     ImagePullBackOff   0          24m
+new-replica-set-2kh4j   0/1     ImagePullBackOff   0          24m
+new-replica-set-295zk   0/1     ImagePullBackOff   0          24m
+new-replica-set-bswzx   0/1     ImagePullBackOff   0          88s

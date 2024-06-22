@@ -1,0 +1,23 @@
+Q-1 What is a worker machine in Kubernetes known as ?
+A-1 node or minion
+
+Q-2 A Node in Kubernetes can only be a physical machine and can never be a virtual  machine ?
+A-2 False. A Node may be physical or virtual machines.
+
+Q-3 Multiple Nodes together form a ..
+A-3 Cluster
+
+Q-4 Which of the following processed runs on Kubernetes Master Nodes ?
+A-4 kube-API Server
+
+Q-5 Which of the following is a distributed reliable key-value store used by kubernetes to store all data used to manage the cluster ?
+A-5 etcd 
+
+Q-6 Which of the following is responsible for distributing work or containers across multiple nodes ?
+A-6 Schedulers
+
+Q-7 Which of the following is the underlying framwork that is responsible for running application in containers like Docker ?
+A-7 Containre Runtime
+
+Q-8 Which is the command line utility used to manage a kubernetes cluster ?
+A-8 kubectl

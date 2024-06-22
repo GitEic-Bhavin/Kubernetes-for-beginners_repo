@@ -1,0 +1,6 @@
+How many PODs are READY in the new-replica-set ?
+
+Run the command: kubectl get replicaset 
+and look at the count under the Ready column.
+
+0 READY
